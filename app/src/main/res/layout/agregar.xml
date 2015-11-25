@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/tvNombre"
+            android:hint="@string/hint_Nombre"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:id="@+id/scrollView"
+            android:layout_weight="1"
+            android:fillViewport="false">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvElaboracion"
+                android:hint="@string/hint_Elaboracion" />
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvIngreAgre"
+        android:hint="ingredientes"
+        android:layout_weight="1.46" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btIngredientes"
+            android:layout_gravity="right"
+            android:onClick="btingredientes"
+            android:text="@string/bt_agregarIngrediente"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_agregar"
+            android:id="@+id/button2"
+            android:onClick="btAgregar"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

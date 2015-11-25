@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/frame">
+
+            <TextView
+                android:layout_width="389dp"
+                android:layout_height="125dp"
+                android:text="New Text"
+                android:id="@+id/tvMnom"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:layout_gravity="center_horizontal" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView2"
+            android:fillViewport="false"
+            android:layout_margin="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvMela"
+                android:gravity="center_horizontal" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMosIngredie" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_cancelar"
+            android:id="@+id/button3"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:onClick="btcancelar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_camara"
+            android:id="@+id/button6"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_fotos"
+            android:id="@+id/button7"
+            android:onClick="btFotoInternas"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

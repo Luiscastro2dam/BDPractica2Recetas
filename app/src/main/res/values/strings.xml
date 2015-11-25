@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BDPractica3</string>
+
+    <string name="menu_agregar">Añadir</string>
+    <string name="menu_borrar">Borrar</string>
+    <string name="menu_Mostrar">Mostrar</string>
+
+
+    <string name="hint_Nombre">Nombre Receta</string>
+    <string name="hint_Elaboracion">Pasos</string>
+    <string name="hint_Ingredientes">Ingredientes</string>
+
+    <string name="bt_agregar">Agregar Receta</string>
+    <string name="bt_agregarIngrediente">Agregar Ingrediente</string>
+    <string name="bt_agregarMasIngre">Añadir</string>
+    <string name="bt_cancelar">Cancelar</string>
+    <string name="bt_editar">Editar</string>
+    <string name="bt_camara">Camara</string>
+    <string name="bt_fotos">Fotos</string>
+    <string name="bt_Borrar">Borrar Ingerdiente</string>
+    <string name="bt_buscar">Go!</string>
+</resources>
